@@ -1,13 +1,19 @@
 import {Injectable, OnInit} from '@angular/core';
 import axios from 'axios';
 
+export const customAxios = axios.create({
+  baseURL: 'http://localhost:8080'
+})
+
 @Injectable({
   providedIn: 'root'
 })
-export class HttpService implements OnInit{
+export class HttpService{
 
   constructor() { }
 
-  ngOnInit(): void {
+  async getProducts() {
+    const httpResponse =  await customAxios.get<any>('box');
+    httpResponse.data;
   }
 }
