@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FyRiNLNVYmzgBqOVQdhwt3KFQgBNCnlaPnvTuzZUk+YJcSsjllCuw4wU219R0Cffc5FRsZpiM/XvNJc0DCWgLA==",
+  "dgSpecHash": "5W20DEJTK8rn2ZwCPi2U4rFaASsvp4EfiwzTTH4eKtQOlwVlaQzBUlIBq/Fq4GOFCbldkg97YRRMcSFvtW4vKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Domain\\Domain.csproj",
+  "projectFilePath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Domain/Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

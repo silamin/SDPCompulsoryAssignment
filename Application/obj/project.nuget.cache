@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "slCvXdNyCJo/GYNs90irg3HrphW1s2W5xkUYbeLyXb/+ITbTfnBv1bCY5G33c2ztCRYc36GFesUb5Bh3ezzZ4A==",
+  "dgSpecHash": "5CuoSgCGSwXQx4iJMOY0UF4vM4PsGGnPGY8e0PRDM2WVYxXJL1uvUL+fv7+i9O72xLzSDl/zdjyQ/S/9S/ECLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Application\\Application.csproj",
+  "projectFilePath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Application/Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bruger\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-rc.2.22472.3\\microsoft.extensions.dependencyinjection.7.0.0-rc.2.22472.3.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-rc.2.22472.3\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.2.22472.3.nupkg.sha512"
+    "/Users/aminaouina/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/aminaouina/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
+    "/Users/aminaouina/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/aminaouina/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0-rc.2.22472.3/microsoft.extensions.dependencyinjection.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/Users/aminaouina/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0-rc.2.22472.3/microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.2.22472.3.nupkg.sha512"
   ],
   "logs": []
 }
