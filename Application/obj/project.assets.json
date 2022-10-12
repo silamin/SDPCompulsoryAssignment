@@ -255,11 +255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\RiderProjects\\BoxManagementSystem\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Bruger\\RiderProjects\\BoxManagementSystem\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\RiderProjects\\BoxManagementSystem\\Application\\obj\\",
+      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -274,8 +274,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Bruger\\RiderProjects\\BoxManagementSystem\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Bruger\\RiderProjects\\BoxManagementSystem\\Domain\\Domain.csproj"
+            "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Domain\\Domain.csproj"
             }
           }
         }

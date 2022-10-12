@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MrvC2cEq0D/67UfTQliv90wtEJCE1e8sGFIvvdRC4xxK0MApb/Dm3OO3PcDWi0xxHcw+I0XeL7g+LY9t7F+9rg==",
+  "dgSpecHash": "3JSTxd4rCO6tzGSuKKTNsRjUqYb+DRLDoD67QSqAtw6FiUUYfCvu1KcsA20BTvEej6B8TnBW9HurN82f1w9rFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\RiderProjects\\BoxManagementSystem\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruger\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",

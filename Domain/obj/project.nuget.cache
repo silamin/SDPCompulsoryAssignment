@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6n4IbOjZKL5xTGNIFtmOhjVdtrKgFgXmneGFFAKhhVn3shcWFTY7AlhBROcz1m+EyUnXIEscMJ1/0PlyLOlvpg==",
+  "dgSpecHash": "FyRiNLNVYmzgBqOVQdhwt3KFQgBNCnlaPnvTuzZUk+YJcSsjllCuw4wU219R0Cffc5FRsZpiM/XvNJc0DCWgLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\RiderProjects\\BoxManagementSystem\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
