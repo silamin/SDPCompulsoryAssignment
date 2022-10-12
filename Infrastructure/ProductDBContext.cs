@@ -24,6 +24,6 @@ public class ProductDBContext : DbContext
     }
 
     public DbSet<Box> BoxTable { get; set; }
-    public DbSet<Box> BoxTypeTable { get; set; }
+    public DbSet<BoxType> BoxTypeTable { get; set; }
 
 }

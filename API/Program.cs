@@ -2,6 +2,8 @@ using Application.DTOs;
 using AutoMapper;
 using Domain;
 using FluentValidation;
+using Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +26,9 @@ var mapper = new MapperConfiguration(config =>
     .CreateMapper();
 
 builder.Services.AddSingleton(mapper);
+builder.Services.AddDbContext<ProductDBContext>(options => options.UseSqlite(
+    "Data source= db.db"));
+builder.Services.AddScoped<ProductRepository>();
 
 builder.Services.AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
 

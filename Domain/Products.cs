@@ -8,7 +8,7 @@ public class Box
     
     public int Length { get; set; }
     public int Width { get; set; }
-    public BoxType BoxType { get; set; }
+    public BoxType BoxType { get; set; } = null!;
 
     public int Height
     {
