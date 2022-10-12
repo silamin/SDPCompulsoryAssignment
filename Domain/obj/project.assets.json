@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/aminaouina/.nuget/packages/": {}
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Domain/Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Domain/Domain.csproj",
-      "packagesPath": "/Users/aminaouina/.nuget/packages/",
-      "outputPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Domain/obj/",
+      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/aminaouina/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -49,7 +49,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/aminaouina/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

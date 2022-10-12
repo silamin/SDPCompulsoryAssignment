@@ -21,6 +21,8 @@ public class ProductDBContext : DbContext
 
         modelBuilder.Entity<Box>()
             .HasOne(box => box.BoxType);
+
+
     }
 
     public DbSet<Box> BoxTable { get; set; }

@@ -10,4 +10,5 @@ public interface IProductRepository
     public Box CreateNewProduct(Box box);
     public void CreateDb();
     BoxType CreateBoxType(BoxType boxType);
+    List<BoxType> GetAllBoxTypes();
 }

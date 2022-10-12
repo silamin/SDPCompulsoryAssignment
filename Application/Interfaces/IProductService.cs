@@ -9,4 +9,5 @@ public interface IProductService
     public Box CreateNewBox(PostBoxDTO dto);
     void CreateDb();
     BoxType CreateNewBoxType(BoxType boxType);
+    List<BoxType> GetAllBoxTypes();
 }

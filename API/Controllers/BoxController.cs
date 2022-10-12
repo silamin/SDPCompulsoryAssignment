@@ -8,11 +8,11 @@ namespace API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ProductController : ControllerBase
+public class BoxController : ControllerBase
 {
     private IProductService _productService;
     
-    public ProductController(IProductService service)
+    public BoxController(IProductService service)
     {
         _productService = service;
     }
@@ -49,24 +49,4 @@ public class ProductController : ControllerBase
         return "databse created";
     }
     
-    
-    [HttpPost]
-    [Route("CreateBoxType")]
-    public ActionResult<BoxType> CreateNewBoxType(BoxType boxType)
-    {
-        try
-        { 
-            _productService.CreateNewBoxType(boxType);
-        }
-        catch (ValidationException e)
-        {
-            return BadRequest(e.Message);
-        }
-        catch (Exception e)
-        {
-            return StatusCode(500, e.ToString());
-        }
-
-        return boxType;
-    }
 }

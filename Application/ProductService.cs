@@ -49,4 +49,9 @@ public class ProductService : IProductService
     {
         return _productRepository.CreateBoxType(boxType);
     }
+
+    public List<BoxType> GetAllBoxTypes()
+    {
+        return _productRepository.GetAllBoxTypes();
+    }
 }

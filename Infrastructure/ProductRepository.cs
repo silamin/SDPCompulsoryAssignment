@@ -49,4 +49,9 @@ public class ProductRepository: IProductRepository
         return boxType;
 
     }
+
+    public List<BoxType> GetAllBoxTypes()
+    {
+        return _productDbContext.BoxTypeTable.ToList();
+    }
 }
