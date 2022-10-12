@@ -1,0 +1,190 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/SDPCompulsoryAssignment/SDPCompulsoryAssignment.csproj": {}
+  },
+  "projects": {
+    "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/Entities.csproj",
+        "packagesPath": "/Users/aminaouina/.nuget/packages/",
+        "outputPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aminaouina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/aminaouina/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/aminaouina/.nuget/packages/",
+        "outputPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aminaouina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/Entities.csproj": {
+                "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/aminaouina/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/SDPCompulsoryAssignment/SDPCompulsoryAssignment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/SDPCompulsoryAssignment/SDPCompulsoryAssignment.csproj",
+        "projectName": "SDPCompulsoryAssignment",
+        "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/SDPCompulsoryAssignment/SDPCompulsoryAssignment.csproj",
+        "packagesPath": "/Users/aminaouina/.nuget/packages/",
+        "outputPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/SDPCompulsoryAssignment/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aminaouina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/Entities.csproj": {
+                "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Entities/Entities.csproj"
+              },
+              "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/aminaouina/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
