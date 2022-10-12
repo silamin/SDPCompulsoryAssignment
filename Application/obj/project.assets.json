@@ -250,19 +250,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
+    "/Users/aminaouina/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Application\\Application.csproj",
+      "projectUniqueName": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Application/Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Application\\obj\\",
+      "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Application/Application.csproj",
+      "packagesPath": "/Users/aminaouina/.nuget/packages/",
+      "outputPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/aminaouina/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -274,8 +274,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Domain\\Domain.csproj"
+            "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Domain/Domain.csproj": {
+              "projectPath": "/Users/aminaouina/RiderProjects/SDPCompulsoryAssignment/Domain/Domain.csproj"
             }
           }
         }
@@ -309,8 +309,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -319,7 +318,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/aminaouina/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }

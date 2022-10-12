@@ -7,7 +7,8 @@ public class ProductRepository: IProductRepository
 {
     public List<Box> getAllBoxes()
     {
-        return new List<Box>() { new Box() { Id = 1, Name = "bob", Price = 1 } };
+        //return new List<Box>() { new Box() { Id = 1, Name = "bob", Price = 1 } };
+        return null;
     }
 
     public Box CreateNewProduct(Box box)
