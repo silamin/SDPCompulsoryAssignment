@@ -520,11 +520,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\API\\API.csproj",
+      "projectPath": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\API\\obj\\",
+      "outputPath": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -539,11 +539,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Application\\Application.csproj"
+            "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Application\\Application.csproj"
             },
-            "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\SDPCompulsoryAssignment\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\SDPCompulsoryAssignment\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
