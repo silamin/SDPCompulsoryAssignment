@@ -28,7 +28,7 @@ public class ProductController : ControllerBase
     {
         try
         {
-            var result = _productService.createNewBox(dto);
+            var result = _productService.CreateNewBox(dto);
             return Created("product/" + result.Id, result);
         }
         catch (ValidationException e)
@@ -39,5 +39,34 @@ public class ProductController : ControllerBase
         {
             return StatusCode(500, e.ToString());
         }
+    }
+    
+    [HttpPost]
+    [Route("CreateDb")]
+    public string CreateDb()
+    {
+        _productService.CreateDb();
+        return "databse created";
+    }
+    
+    
+    [HttpPost]
+    [Route("CreateBoxType")]
+    public ActionResult<BoxType> CreateNewBoxType(BoxType boxType)
+    {
+        try
+        { 
+            _productService.CreateNewBoxType(boxType);
+        }
+        catch (ValidationException e)
+        {
+            return BadRequest(e.Message);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, e.ToString());
+        }
+
+        return boxType;
     }
 }

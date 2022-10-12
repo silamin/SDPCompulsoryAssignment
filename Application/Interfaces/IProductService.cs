@@ -6,5 +6,7 @@ public interface IProductService
 {
     public List<Box> GetAllBoxes();
 
-    public Box createNewBox(PostBoxDTO dto);
+    public Box CreateNewBox(PostBoxDTO dto);
+    void CreateDb();
+    BoxType CreateNewBoxType(BoxType boxType);
 }

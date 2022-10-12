@@ -24,12 +24,11 @@ public class ProductService : IProductService
     
     public List<Box> GetAllBoxes()
     {
-        return _productRepository.getAllBoxes(); 
+        return _productRepository.GetAllBoxes(); 
     }
 
-    public Box createNewBox(PostBoxDTO dto)
+    public Box CreateNewBox(PostBoxDTO dto)
     {
-        //Map dto
         var validation = _postValidator.Validate(dto);
         if (!validation.IsValid)
         {
@@ -37,10 +36,17 @@ public class ProductService : IProductService
         }
         
         Box box = _mapper.Map<Box>(dto);
-        
-        
-        
         return _productRepository.CreateNewProduct(box);
+
     }
 
+    public void CreateDb()
+    {
+        _productRepository.CreateDb();
+    }
+
+    public BoxType CreateNewBoxType(BoxType boxType)
+    {
+        return _productRepository.CreateBoxType(boxType);
+    }
 }

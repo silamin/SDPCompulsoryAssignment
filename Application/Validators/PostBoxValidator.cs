@@ -8,6 +8,5 @@ public class PostBoxValidator: AbstractValidator<PostBoxDTO>
     //to finalize
     public PostBoxValidator()
     {
-        RuleFor(p => p.Price).NotEmpty();
     }
 }
