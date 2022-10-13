@@ -1,1 +1,45 @@
-hello world
+<div>
+  <mat-form-field>
+    <input matInput [(ngModel)]="boxName">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="boxDescription">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <input type="number" matInput [(ngModel)]="boxLength">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <input type="number" matInput [(ngModel)]="boxWidth">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <input type="number" matInput [(ngModel)]="boxTypeID">
+  </mat-form-field>
+
+  <br>
+
+  <button mat-raised-button (click)="createBox()">
+    create box
+  </button>
+
+</div>
+
+<div>
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let box of boxes">
+      <img src="https://picsum.photos/200/300/?random" alt="img">
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<router-outlet></router-outlet>
