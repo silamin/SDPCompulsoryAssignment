@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpService} from "../services/http.service";
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -8,15 +10,20 @@ import {HttpService} from "../services/http.service";
 })
 export class AppComponent implements OnInit{
   title = 'Frontend';
-  products: any;
+  boxes: any;
+  faTimes =faTimes;
 
   constructor(private http: HttpService) {
 
   }
 
   async ngOnInit() {
-    const products = await this.http.getProducts();
-    console.log(products);
-    this.products=products.data;
+    const boxes = await this.http.getProducts();
+    this.boxes=boxes.data;
+    console.log(boxes);
+  }
+
+  OpenForm() {
+    
   }
 }

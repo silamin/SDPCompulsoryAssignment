@@ -18,12 +18,14 @@ public class BoxController : ControllerBase
     }
 
     [HttpGet]
-    public List<Box> getBoxes()
+    [Route("GetAllBoxes")]
+    public List<Box> GetBoxes()
     {
         return _productService.GetAllBoxes();
     }
 
     [HttpPost]
+    [Route("CreateNewBox")]
     public ActionResult<Box> CreateNewBox(PostBoxDTO dto)
     {
         try
@@ -46,7 +48,7 @@ public class BoxController : ControllerBase
     public string CreateDb()
     {
         _productService.CreateDb();
-        return "databse created";
+        return "database created";
     }
     
 }

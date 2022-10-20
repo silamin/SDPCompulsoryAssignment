@@ -12,17 +12,12 @@ public class ProductDBContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Box>()
-            .Property(p => p.Id)
-            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<BoxType>()
+            .HasMany(b => b.Boxes);
         modelBuilder.Entity<BoxType>()
             .Property(t => t.Id)
             .ValueGeneratedOnAdd();
-
-        modelBuilder.Entity<Box>()
-            .HasOne(box => box.BoxType);
-
-
+        
     }
 
     public DbSet<Box> BoxTable { get; set; }

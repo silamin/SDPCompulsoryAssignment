@@ -13,7 +13,8 @@ export class HttpService{
   constructor() { }
 
   async getProducts() {
-    const httpResponse =  await customAxios.get('Box');
+    const httpResponse =  await customAxios.get('Box/GetAllBoxes');
+    console.log(httpResponse.data);
     return httpResponse.data;
   }
 }

@@ -35,7 +35,7 @@ public class ProductService : IProductService
             throw new ValidationException(validation.ToString());
         }
         
-        Box box = _mapper.Map<Box>(dto);
+        var box = _mapper.Map<Box>(dto);
         return _productRepository.CreateNewProduct(box);
 
     }

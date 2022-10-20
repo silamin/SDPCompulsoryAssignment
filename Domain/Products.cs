@@ -9,22 +9,18 @@ public class Box
     public int Length { get; set; }
     public int Width { get; set; }
     
-    public BoxType? BoxType { get; set; }
-    public int BoxTypeId { get; set; }
-
     public int Height
     {
         get;
         set;
     }
 
+    public string BoxImage { get; set; } = null!;
 }
 
 public class BoxType
 {
     public int Id { get; set; }
     public string? Description { get; set; }
-
-    
-    
+    public ICollection<Box> Boxes { get; set; } = null!;
 }
