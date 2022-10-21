@@ -3,72 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-
-  <link rel="stylesheet" href="style.css">
-  <title>Welcome to your favorite box factory</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
+<div class="slide-container swiper">
+  <div class="slide-content">
+    <div class="card-wrapper swiper-wrapper">
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
 
-<section>
-
-  <div class="swiper mySwiper container">
-    <div class="swiper-wrapper content">
-
-      <div class="swiper-slide card">
-        <div class="card-content">
-          <div class="image">
-            <img src="../images/magicBox.png" alt="magic box">
-          </div>
-
-
-          <div class="name-profession">
-            <span class="name">magic box</span>
-            <span class="profession">test</span>
-
-          </div>
-
-
-          <div class="button">
-            <button class="aboutMe">show more</button>
+          <div class="card-image">
           </div>
         </div>
+
+        <div class="card-content">
+          <h2 class="name">David Dell</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+          <button class="button">View More</button>
+        </div>
       </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">David Dell</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+          <button class="button">View More</button>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="../images/addBox.png" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <mat-form-field>
+            <input type="text" placeholder="name" style="text-align: center">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <textarea matInput placeholder="         Description"></textarea>
+          </mat-form-field>
+          <button class="button">Add Box</button>
+        </div>
+      </div>
+
 
     </div>
   </div>
 
-
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next swiper-navBtn"></div>
+  <div class="swiper-button-prev swiper-navBtn"></div>
   <div class="swiper-pagination"></div>
-</section>
+</div>
 
-<!-- Swiper JS -->
+</body>
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
+    spaceBetween: 25,
     loop: true,
-    loopFillGroupWithBlank: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+    breakpoints:{
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      950: {
+        slidesPerView: 3,
+      },
+    },
   });
 </script>
 
-</body>
 </html>
