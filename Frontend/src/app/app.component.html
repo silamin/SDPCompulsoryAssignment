@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script defer src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -46,10 +49,6 @@
         </div>
       </div>
 
-
-
-
-
       <div class="card swiper-slide">
         <div class="image-content">
           <span class="overlay"></span>
@@ -67,8 +66,8 @@
           <mat-form-field>
             <textarea matInput placeholder="         Description"></textarea>
           </mat-form-field>
-          <button class="button">Add Box</button>
-        </div>
+          <button data-modal-target="#modal" class="button">Add Box</button>
+
       </div>
 
 
@@ -78,42 +77,65 @@
   <div class="swiper-button-next swiper-navBtn"></div>
   <div class="swiper-button-prev swiper-navBtn"></div>
   <div class="swiper-pagination"></div>
+
+    <form><div class="form">
+        <div class="modal" id="modal">
+
+          <div class="wrapper">
+            <div class="title">
+              Add New Box
+            </div>
+            <div class="form">
+              <div class="inputfield">
+                <label>Name</label>
+                <input type="text" class="input">
+              </div>
+              <div class="inputfield">
+                <label>Length in m</label>
+                <input type="number" class="input">
+              </div>
+              <div class="inputfield">
+                <label>Width in m</label>
+                <input type="number" class="input">
+              </div>
+              <div class="inputfield">
+                <label>Height in m</label>
+                <input type="number" class="input">
+              </div>
+              <div class="inputfield">
+                <label>Weight in Kg</label>
+                <input type="number" class="input">
+              </div>
+              <div class="inputfield">
+                <label>Type</label>
+                <div class="custom_select">
+                  <select>
+                    <option value="">Select</option>
+                    <option value="male">Metal</option>
+                    <option value="female">Cartoons</option>
+                  </select>
+                </div>
+              </div>
+              <div class="inputfield">
+                <label>Description</label>
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="inputfield">
+                <label>Picture</label>
+                <input type="file" class="input"
+                       accept="image/png, image/jpeg">
+              </div>
+              <div class="inputfield">
+                <input type="reset" value="RESET" class="btn"/>
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="overlay"></div>
+    </div></form>
+
 </div>
-
+</div>
 </body>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-  var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints:{
-      0: {
-        slidesPerView: 1,
-      },
-      520: {
-        slidesPerView: 2,
-      },
-      950: {
-        slidesPerView: 3,
-      },
-    },
-  });
-</script>
-
 </html>
