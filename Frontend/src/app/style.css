@@ -360,7 +360,14 @@ body{
   .wrapper .form .inputfield label{
     margin-bottom: 5px;
   }
-  .wrapper .form .inputfield.terms{
+  .wrapper .form .inputfield.terms {
     flex-direction: row;
   }
 }
+.header {
+  padding: 20px;
+  text-align: center;
+  color: #265DF2;
+  font-size: 22px;
+}
+
