@@ -36,7 +36,6 @@ public class BoxTypeController: ControllerBase
     }
 
     [HttpGet]
-    [Route("GetAllBoxTypes")]
     public ActionResult<List<BoxType>> getAllBoxTypes()
     {
         return _productService.GetAllBoxTypes();

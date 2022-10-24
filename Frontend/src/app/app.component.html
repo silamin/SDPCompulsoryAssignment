@@ -1,3 +1,4 @@
+<!--
 <div>
   <mat-form-field>
     <input matInput [(ngModel)]="boxName">
@@ -35,11 +36,44 @@
 
 </div>
 
-<div>
-  <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile *ngFor="let box of boxes">
-      <img src="https://picsum.photos/200/300/?random" alt="img">
-    </mat-grid-tile>
-  </mat-grid-list>
+-->
+
+<div class ="container">
+
+
+  <table mat-table [dataSource]="boxes">
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>name </th>
+      <td mat-cell *matCellDef="let box"> {{box.name}} </td>
+      <td mat-footer-cell *matFooterCellDef>name </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>description </th>
+      <td mat-cell *matCellDef="let box"> {{box.description}} </td>
+      <td mat-footer-cell *matFooterCellDef>description </td>
+    </ng-container>
+
+    <ng-container matColumnDef="width">
+      <th mat-header-cell *matHeaderCellDef>width </th>
+      <td mat-cell *matCellDef="let box"> {{box.width}} </td>
+      <td mat-footer-cell *matFooterCellDef>width </td>
+    </ng-container>
+
+
+    <!-- Header and Row Declarations -->
+    <tr mat-header-row *matHeaderRowDef="['name', 'description', 'width']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['name', 'description', 'width']"></tr>
+  </table>
+
 </div>
+
+
+<div>
+  <button mat-raised-button color="primary" (click)="openBoxForm()">Add box</button>
+</div>
+
+
 <router-outlet></router-outlet>

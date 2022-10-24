@@ -20,4 +20,9 @@ export class HttpService{
   async createProduct(boxDTO: { boxTypeId: any; name: any; length: any; width: any; description: any }) {
     return await customAxios.post('box',boxDTO);
   }
+
+  async getTypes() {
+    const typeResponse = await customAxios.get("BoxType");
+    return typeResponse.data;
+  }
 }

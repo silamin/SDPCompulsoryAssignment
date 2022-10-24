@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpService} from "../services/http.service";
+import {MatDialog} from "@angular/material/dialog";
+import {BoxComponent} from "./components/box/box.component";
 
 @Component({
   selector: 'app-root',
@@ -18,7 +20,11 @@ export class AppComponent implements OnInit{
   boxWidth: any;
   boxTypeID: any;
 
-  constructor(private http: HttpService) {
+
+  displayedColumns: any;
+
+  constructor(private http: HttpService,
+              public dialog: MatDialog) {
 
   }
 
@@ -44,4 +50,14 @@ export class AppComponent implements OnInit{
     this.boxes.push(result);
 
   }
+
+
+  openBoxForm() {
+    this.dialog.open(BoxComponent, {
+      height: '500px',
+      width: '300px',
+    });
+  }
 }
+
+
