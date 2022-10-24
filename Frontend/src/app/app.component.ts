@@ -1,7 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {HttpService} from "../services/http.service";
 import {MatDialog} from "@angular/material/dialog";
 import {BoxComponent} from "./components/box/box.component";
+import {MatTable} from "@angular/material/table";
+
 
 @Component({
   selector: 'app-root',
@@ -46,8 +48,7 @@ export class AppComponent implements OnInit{
 
     dialogRef.afterClosed().subscribe(
       data => {
-        this.boxes.push(data.data);
-        console.log("data",data)
+        this.boxes = [...this.boxes,data.data];
       }
     )
   }

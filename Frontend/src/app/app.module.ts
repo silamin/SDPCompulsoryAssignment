@@ -15,6 +15,7 @@ import {MatSliderModule} from "@angular/material/slider";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTableModule} from "@angular/material/table";
 import {MatDialogModule} from "@angular/material/dialog";
+import {CdkTableModule} from '@angular/cdk/table';
 
 
 const routes: Routes = [

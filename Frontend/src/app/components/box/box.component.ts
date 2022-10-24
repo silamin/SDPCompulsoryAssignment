@@ -52,8 +52,9 @@ export class BoxComponent implements OnInit {
 
     const result = await this.http.createProduct(boxDTO);
 
-    //TODO
-    //needs to push to update the listview
+
     this.dialogRef.close(result);
   }
 }
+
+
