@@ -17,12 +17,13 @@ export class HttpService{
     return httpResponse.data;
   }
 
-  async createProduct(boxDTO: { boxTypeId: any; name: any; length: any; width: any; description: any }) {
-    return await customAxios.post('box',boxDTO);
-  }
 
   async getTypes() {
     const typeResponse = await customAxios.get("BoxType");
     return typeResponse.data;
+  }
+
+  async createProduct(boxDTO: { name: any; description: any; length: any; width: any; height: any;  boxTypeId: any; }) {
+    return await customAxios.post('box',boxDTO);
   }
 }

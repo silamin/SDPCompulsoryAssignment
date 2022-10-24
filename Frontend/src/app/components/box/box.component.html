@@ -1,47 +1,57 @@
 <mat-dialog-content>
   <div class="container">
-    <mat-form-field appearance="fill">
-      <mat-label>Name</mat-label>
-      <input matInput>
-    </mat-form-field>
+    <form [formGroup]="boxForm">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="boxName" type="text">
+      </mat-form-field>
 
-    <br>
+      <br>
 
-    <mat-form-field appearance="fill">
-      <mat-label>Description</mat-label>
-      <input matInput>
-    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="boxDescription" type="text">
+      </mat-form-field>
 
-    <br>
+      <br>
 
-    <mat-form-field appearance="fill">
-      <mat-label>Width</mat-label>
-      <input matInput>
-    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Width</mat-label>
+        <input matInput formControlName="boxWidth" type="number">
+      </mat-form-field>
 
-    <br>
+      <br>
 
-    <mat-form-field appearance="fill">
-      <mat-label>Height</mat-label>
-      <input matInput>
-    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Height</mat-label>
+        <input matInput formControlName="boxHeight" type="number">
+      </mat-form-field>
 
-    <br>
+      <br>
 
-    <mat-form-field appearance="fill">
-      <mat-label>Length</mat-label>
-      <input matInput>
-    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Length</mat-label>
+        <input matInput formControlName="boxLength" type="number">
+      </mat-form-field>
 
-    <br>
+      <br>
 
-    <h4>Basic native select</h4>
-    <mat-form-field appearance="fill">
-      <mat-label>Cars</mat-label>
-      <select matNativeControl required>
-        <option *ngFor="let type of types">{{type.description}}</option>
-      </select>
-    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Type</mat-label>
+        <select matNativeControl required formControlName="boxType">
+          <option *ngFor="let type of types" [value]="type.id">{{type.description}}</option>
+        </select>
+      </mat-form-field>
+    </form>
 
   </div>
 </mat-dialog-content>
+
+<mat-dialog-actions align="end">
+
+  <div class="container">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="saveBox()">Save</button>
+  </div>
+
+</mat-dialog-actions>

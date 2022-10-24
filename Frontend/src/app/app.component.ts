@@ -38,25 +38,18 @@ export class AppComponent implements OnInit{
     console.log(this.productName);
   }
 
-  async createBox() {
-    let boxDTO = {
-      name: this.boxName,
-      description: this.boxDescription,
-      length: this.boxLength,
-      width: this.boxWidth,
-      boxTypeId: this.boxTypeID
-    }
-    const result = await this.http.createProduct(boxDTO);
-    this.boxes.push(result);
-
-  }
-
-
   openBoxForm() {
-    this.dialog.open(BoxComponent, {
+    let dialogRef = this.dialog.open(BoxComponent, {
       height: '500px',
       width: '300px',
     });
+
+    dialogRef.afterClosed().subscribe(
+      data => {
+        this.boxes.push(data.data);
+        console.log("data",data)
+      }
+    )
   }
 }
 
