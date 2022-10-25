@@ -46,11 +46,22 @@ export class AppComponent implements OnInit{
       width: '300px',
     });
 
+    //The most stupid thing ever, why is the no way to just make it check the change and reflect it on the table
     dialogRef.afterClosed().subscribe(
       data => {
         this.boxes = [...this.boxes,data.data];
       }
     )
+  }
+
+  editBox(entry: any) {
+    console.log("finna edit this entry",entry);
+  }
+
+  async deleteBox(entry: any) {
+    //TODO
+    console.log(entry);
+    await this.http.deleteBox(entry.id);
   }
 }
 

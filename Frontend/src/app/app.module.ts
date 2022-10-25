@@ -16,6 +16,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTableModule} from "@angular/material/table";
 import {MatDialogModule} from "@angular/material/dialog";
 import {CdkTableModule} from '@angular/cdk/table';
+import {MatIconModule} from "@angular/material/icon";
 
 
 const routes: Routes = [
@@ -43,7 +44,8 @@ const routes: Routes = [
     MatGridListModule,
     MatTableModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

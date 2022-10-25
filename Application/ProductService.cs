@@ -54,4 +54,9 @@ public class ProductService : IProductService
     {
         return _productRepository.GetAllBoxTypes();
     }
+
+    public void DeleteBox(int box)
+    {
+        _productRepository.DeleteProduct(box);
+    }
 }

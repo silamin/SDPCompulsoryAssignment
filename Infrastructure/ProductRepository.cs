@@ -22,11 +22,16 @@ public class ProductRepository: IProductRepository
         _productDbContext.SaveChanges();
         return box; 
     }
-    public Box DeleteProduct(Box box)
+    public Box DeleteProduct(int boxId)
     {
-        _productDbContext.BoxTable.Remove(box);
+        Box boxToRemove = _productDbContext.BoxTable.Find(boxId);
+        if (boxToRemove == null)
+            return null;
+            
+        _productDbContext.BoxTable.Remove(boxToRemove);
         _productDbContext.SaveChanges();
-        return box; 
+        
+        return null; 
     }
     public Box EditProduct(Box box)
     {

@@ -26,4 +26,8 @@ export class HttpService{
   async createProduct(boxDTO: { name: any; description: any; length: any; width: any; height: any;  boxTypeId: any; }) {
     return await customAxios.post('box',boxDTO);
   }
+
+  async deleteBox(entry: any) {
+    await customAxios.get('Box/Delete/'+entry);
+  }
 }
