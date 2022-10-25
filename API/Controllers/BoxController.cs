@@ -49,12 +49,12 @@ public class BoxController : ControllerBase
         return "databse created";
     }
 
-    [HttpGet]
+    [HttpDelete]
     [Route("Delete/{boxId}")]
-    public ActionResult DeleteBox([FromRoute] int boxId)
+    public bool DeleteBox([FromRoute] int boxId)
     {
         _productService.DeleteBox(boxId);
-        return Ok();
+        return true;
     }
 
 }

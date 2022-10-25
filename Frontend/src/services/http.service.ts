@@ -28,6 +28,10 @@ export class HttpService{
   }
 
   async deleteBox(entry: any) {
-    await customAxios.get('Box/Delete/'+entry);
+    await customAxios.delete('Box/Delete/'+entry);
+  }
+
+  async editBox(entry: any) {
+
   }
 }

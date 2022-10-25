@@ -35,6 +35,11 @@ public class ProductRepository: IProductRepository
     }
     public Box EditProduct(Box box)
     {
+        Box boxToEdit = _productDbContext.BoxTable.Find(box.Id);
+        if (boxToEdit == null)
+            return null;
+        
+
         _productDbContext.BoxTable.Update(box);
         _productDbContext.SaveChanges();
         return box;

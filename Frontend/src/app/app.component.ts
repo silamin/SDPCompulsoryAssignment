@@ -54,14 +54,18 @@ export class AppComponent implements OnInit{
     )
   }
 
-  editBox(entry: any) {
+  async editBox(entry: any) {
     console.log("finna edit this entry",entry);
+    await this.http.editBox(entry)
   }
 
   async deleteBox(entry: any) {
     //TODO
     console.log(entry);
     await this.http.deleteBox(entry.id);
+    this.boxes = this.boxes.filter((box: { id: any; }) => box.id !== entry.id);
+
+
   }
 }
 
