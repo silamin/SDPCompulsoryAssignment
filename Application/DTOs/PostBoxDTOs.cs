@@ -10,6 +10,8 @@ public class PostBoxDTO
     public int Length { get; set; }
     public int Width { get; set; }
 
+    public int Weight { get; set; }
+
     public string BoxImage { get; set; } = null!;
     public int Height { get; set; }
 }
