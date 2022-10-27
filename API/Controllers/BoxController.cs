@@ -50,11 +50,18 @@ public class BoxController : ControllerBase
     }
 
     [HttpDelete]
-    [Route("Delete/{boxId}")]
+    [Route("{boxId}")]
     public bool DeleteBox([FromRoute] int boxId)
     {
         _productService.DeleteBox(boxId);
         return true;
+    }
+
+    [HttpPatch]
+    [Route("{box.Id}")]
+    public void UpdateBox(Box box)
+    {
+        _productService.UpdateBox(box);
     }
 
 }

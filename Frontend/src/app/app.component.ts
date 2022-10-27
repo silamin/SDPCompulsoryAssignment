@@ -55,8 +55,27 @@ export class AppComponent implements OnInit{
   }
 
   async editBox(entry: any) {
-    console.log("finna edit this entry",entry);
-    await this.http.editBox(entry)
+    let dialogRef = this.dialog.open(BoxComponent, {
+      height: '500px',
+      width: '300px',
+    });
+
+    //TODO
+    dialogRef.componentInstance.ShowData(entry);
+
+    let boxToEdit = {
+      id: entry.id,
+      name: 'working',
+      description: 'hard',
+      length: '1',
+      width: '2',
+      height: '3',
+      boxTypeId:'1'
+    }
+
+    console.log(entry.id);
+    //To reflect change on entity we could retrieve the entity from the db and then just update it
+    await console.log(this.http.editBox(boxToEdit));
   }
 
   async deleteBox(entry: any) {
@@ -64,8 +83,6 @@ export class AppComponent implements OnInit{
     console.log(entry);
     await this.http.deleteBox(entry.id);
     this.boxes = this.boxes.filter((box: { id: any; }) => box.id !== entry.id);
-
-
   }
 }
 

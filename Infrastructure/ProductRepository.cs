@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using AutoMapper.Internal.Mappers;
 using Domain;
 using Microsoft.EntityFrameworkCore;
 
@@ -63,5 +64,14 @@ public class ProductRepository: IProductRepository
     public List<BoxType> GetAllBoxTypes()
     {
         return _productDbContext.BoxTypeTable.ToList();
+    }
+
+    public void UpdateBox(Box box)
+    {
+        var existingBox = _productDbContext.BoxTable.Where(b => b.Id == box.Id);
+        if (existingBox==null)
+            return;
+            _productDbContext.Update(box);
+        _productDbContext.SaveChanges();
     }
 }

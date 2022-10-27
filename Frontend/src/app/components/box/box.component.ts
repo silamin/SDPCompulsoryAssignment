@@ -13,6 +13,7 @@ export class BoxComponent implements OnInit {
   types: any;
 
   boxForm !: FormGroup;
+  Box: any;
 
   constructor(private http: HttpService,
               private dialogRef: MatDialogRef<BoxComponent>,
@@ -54,6 +55,11 @@ export class BoxComponent implements OnInit {
 
 
     this.dialogRef.close(result);
+  }
+
+  ShowData(entry: any) {
+    this.Box = entry;
+
   }
 }
 

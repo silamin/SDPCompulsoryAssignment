@@ -59,4 +59,9 @@ public class ProductService : IProductService
     {
         _productRepository.DeleteProduct(box);
     }
+
+    public void UpdateBox(Box box)
+    {
+        _productRepository.UpdateBox(box);
+    }
 }
