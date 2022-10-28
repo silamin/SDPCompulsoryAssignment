@@ -88,14 +88,23 @@ picture{
 picture img{
   width: 100%;
 }
-.detail,button{
-  width: 90%;
+.detail{
+  min-height: 33%;
   /*background: red;*/
   margin: auto;
   padding: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  height: 50px;
+  font-size: 18px;
+  color: #444;
+}
+.button{
+  width: 90%;
+  margin-left: 24%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
   height: 50px;
   font-size: 18px;
   color: #444;
@@ -116,6 +125,7 @@ a{
   }
   .text p{
     width: 90%;
+    margin-left: 86px;
   }
   header h1{
     font-size: 25px;
@@ -131,6 +141,7 @@ a{
     font-size: 16px;
   }
   a{
+    width: 100%;
     padding: 6px 10px;
   }
 }
