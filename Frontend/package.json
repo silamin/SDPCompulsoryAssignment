@@ -24,7 +24,11 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "axios": "^1.1.2",
+    "bootstrap": "^5.2.2",
+    "carousel": "^0.0.3",
+    "owl.carousel": "^2.3.4",
     "rxjs": "~7.5.0",
+    "span": "^0.0.6",
     "swiper": "^8.4.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
