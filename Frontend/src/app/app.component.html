@@ -55,7 +55,7 @@
         </p>
       </div>
       <div class="button">
-        <span href="#" class="modal-trigger"><a href="#modal-example" class="bt" aria-role="button">new box</a></span>
+        <span href="#" class="modal-trigger"><a href="#modal-example" class="bt" aria-role="button" (click)="preFillForm()">new box</a></span>
       </div>
     </div>
   </section>
@@ -77,7 +77,7 @@ margin-top: 0px !important;">
             <div class="form">
               <div class="inputfield">
                 <label>name</label>
-                <input type="text" class="input">
+                <input type="text" class="input" id="name-input" name="name-input">
               </div>
               <div class="inputfield">
                 <label>height</label>
@@ -107,7 +107,7 @@ margin-top: 0px !important;">
               </div>
               <div class="inputfield">
                 <label>box description</label>
-                <textarea class="textarea"></textarea>
+                <textarea class="textarea" id="description-input" name="description-input"></textarea>
               </div>
               <div class="inputfield">
                 <label for="img">Select image:</label>
