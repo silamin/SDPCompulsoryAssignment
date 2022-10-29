@@ -12,17 +12,13 @@ export class AppComponent implements OnInit{
   title = 'Frontend';
   boxes: any[]=[];
 
-
-  async addBox(){
-  }
-
   constructor(private http: HttpService) {
 
   }
 
   async ngOnInit() {
-    const boxes = await this.http.getProducts();
-    this.boxes=boxes;
+    //const boxes = await this.http.getProducts();
+    //this.boxes=boxes;
   }
 
   OpenForm() {

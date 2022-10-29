@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext');
 
 *{
   padding: 0;
@@ -110,6 +110,7 @@ picture img{
   height: 50px;
   font-size: 18px;
   color: #444;
+  cursor: pointer;
 }
 small{color: #555;}
 a{
@@ -149,7 +150,6 @@ a{
 }
 .wrapper{
   font-family: 'Montserrat', sans-serif;
-  max-width: 500px;
   width: 100%;
   background: #fff;
   margin: 20px auto;
@@ -312,4 +312,100 @@ a{
   .wrapper .form .inputfield.terms{
     flex-direction: row;
   }
+}
+
+
+.wrp {
+  width: 320px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.bt {
+  cursor: pointer;
+  border: 1px solid #369;
+  background: #369;
+  text-align: center;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.wf-modal {
+  text-align: left;
+}
+.wf-modal .tit {
+  font-size: 20px;
+  margin: 0;
+}
+.wf-modal .close .bt {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: none;
+  color: #ccc;
+  padding: 5px 10px;
+  border: 0;
+}
+.wf-modal .close .bt:before {
+  content: "";
+  font-family: "fontAwesome";
+}
+.wf-modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.wf-modal:target:before {
+  display: block;
+}
+.wf-modal:target .wf-dialog-modal {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 20%;
+}
+
+.wf-dialog-modal {
+  background: #fefefe;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-left: -200px;
+  margin-top: 0px;
+
+  position: fixed;
+  left: 50%;
+  top: 100%;
+  z-index: 11;
+  width: 400px;
+  -webkit-transform: translate(0, 500%);
+  -moz-transform: translate(0, 500%);
+  transform: translate(0, 500%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.wf-content-modal {
+  padding: 10px;
+}
+
+.wf-footer-modal {
+  padding: 10px;
+}
+
+.wf-header-modal {
+  border-bottom: 1px solid #eee;
+}
+
+.wf-footer-modal {
+  border-top: 1px solid #eee;
+  text-align: right;
 }

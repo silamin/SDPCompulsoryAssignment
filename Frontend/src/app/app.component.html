@@ -1,4 +1,7 @@
+<html>
+
 <main>
+
   <div class="text">
     <h1>Box factory</h1>
     <p>
@@ -13,6 +16,7 @@
     </p>
   </header>
   <section>
+
     <div *ngFor="let item of [].constructor(12); let i= index ">
       <div class="product">
         <picture>
@@ -51,57 +55,73 @@
         </p>
       </div>
       <div class="button">
-        <a href="#">new box</a>
+        <span href="#" class="modal-trigger"><a href="#modal-example" class="bt" aria-role="button">new box</a></span>
       </div>
     </div>
   </section>
   <div class="wrapper">
-    <div class="title">
-      create new box
-    </div>
-    <div class="form">
-      <div class="inputfield">
-        <label>name</label>
-        <input type="text" class="input">
+    <section class="wrp">
+      <div class="wf-modal" aria-hidden="true" id="modal-example">
+        <article class="wf-dialog-modal" style="top: 30px !important;">
+          <header class="wf-header-modal">
+            <div class="title">
+              create new box
+            </div>
+            <span class="close"><a href="#" class="bt" aria-hidden="true"></a></span>
+          </header>
+          <div class="wf-content-modal">
+            <div class="form">
+              <div class="inputfield">
+                <label>name</label>
+                <input type="text" class="input">
+              </div>
+              <div class="inputfield">
+                <label>height</label>
+                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+              </div>
+              <div class="inputfield">
+                <label>width</label>
+                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+              </div>
+              <div class="inputfield">
+                <label>length</label>
+                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+              </div>
+              <div class="inputfield">
+                <label>weight</label>
+                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+              </div>
+              <div class="inputfield">
+                <label>material</label>
+                <div class="custom_select">
+                  <select>
+                    <option value="">Select</option>
+                    <option value="male">metal</option>
+                    <option value="female">plastic</option>
+                  </select>
+                </div>
+              </div>
+              <div class="inputfield">
+                <label>box description</label>
+                <textarea class="textarea"></textarea>
+              </div>
+              <div class="inputfield">
+                <label for="img">Select image:</label>
+                <input type="file" id="img" name="img" accept="image/*" class="input">
+              </div>
+              <div class="inputfield">
+                <input type="submit" value="Register" class="btn">
+              </div>
+            </div>
+            </div>
+        </article>
       </div>
-      <div class="inputfield">
-        <label>height</label>
-        <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
-      </div>
-      <div class="inputfield">
-        <label>width</label>
-        <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
-      </div>
-      <div class="inputfield">
-        <label>length</label>
-        <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
-      </div>
-      <div class="inputfield">
-        <label>weight</label>
-        <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
-      </div>
-      <div class="inputfield">
-        <label>material</label>
-        <div class="custom_select">
-          <select>
-            <option value="">Select</option>
-            <option value="male">metal</option>
-            <option value="female">plastic</option>
-          </select>
-        </div>
-      </div>
-      <div class="inputfield">
-        <label>box description</label>
-        <textarea class="textarea"></textarea>
-      </div>
-      <div class="inputfield">
-        <label for="img">Select image:</label>
-        <input type="file" id="img" name="img" accept="image/*" class="input">
-      </div>
-      <div class="inputfield">
-        <input type="submit" value="Register" class="btn">
-      </div>
-    </div>
+    </section>
   </div>
+
+
 </main>
+</html>
+
+
 
