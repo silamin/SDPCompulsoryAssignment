@@ -44,9 +44,10 @@ main header{
 }
 header p span{
   font-size: 40px;
+  color:white;
   margin: 0 5px;
   cursor: pointer;
-  background-color: green;
+  background-color: #d5dbd9;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -55,8 +56,8 @@ header p span{
   border-radius: 3px;
 }
 header p span:hover{
-  background: black;
-  color: black;
+  background: white;
+  color: #6773ff;
 }
 section{
   width: 98%;
