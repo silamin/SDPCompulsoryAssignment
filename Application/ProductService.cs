@@ -36,6 +36,7 @@ public class ProductService : IProductService
         }
         
         var box = _mapper.Map<Box>(dto);
+        box.CreationDate= DateTime.Now.ToString("M/d/yyyy"); ;
         return _productRepository.CreateNewProduct(box);
 
     }

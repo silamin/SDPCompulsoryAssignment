@@ -18,6 +18,7 @@ public class Box
     }
 
     public string BoxImage { get; set; } = null!;
+    public string CreationDate { get; set; }
 }
 
 public class BoxType

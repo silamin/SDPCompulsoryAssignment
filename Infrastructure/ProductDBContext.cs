@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using Domain;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +18,6 @@ public class ProductDBContext : DbContext
         modelBuilder.Entity<BoxType>()
             .Property(t => t.Id)
             .ValueGeneratedOnAdd();
-        
     }
 
     public DbSet<Box> BoxTable { get; set; }
