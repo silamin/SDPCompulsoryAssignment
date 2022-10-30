@@ -18,8 +18,7 @@ export class HttpService{
     return httpResponse.data;
   }
 
-  async createNewBox(elementById: HTMLElement | null, elementById2: HTMLElement | null, elementById3: HTMLElement | null, elementById4: HTMLElement | null, elementById5: HTMLElement | null, elementById6: HTMLElement | null, elementById7: HTMLElement | null) {
-    const httpResponse =  await customAxios.put('Box/CreateNewBox');
-    return httpResponse.data;
+  async createBox(dto: {name: string; description: string; length: number; width: number;  weight: number; boxImage: string; height: number }) {
+    return await customAxios.post('Box/CreateNewBox');
   }
 }

@@ -99,7 +99,6 @@ picture img{
   /*background: red;*/
   margin: auto;
   padding: 5px;
-  display: flex;
   justify-content: space-between;
   height: 50px;
   font-size: 18px;

@@ -19,14 +19,25 @@
 
     <div *ngFor="let item of [].constructor(12); let i= index ">
       <div class="product">
-        <picture>
+        <picture style="margin-bottom: 0px !important;">
           <img src="images/addBox.png">
         </picture>
-        <div class="detail">
-          <p>
-            <b>Box number {{i}}</b><br>
-            <small>Box description</small>
-          </p>
+        <div class="detail" style="padding-top: 0px !important;">
+            <b>Box number {{i}} <fa-icon style="font-size: 40px;
+margin-left: 130px;
+color: red;" [icon]="faTimes"></fa-icon></b>
+          <br><br>
+            <small>
+              </small>
+
+          <p style="
+  max-width: 100% !important;
+  overflow: scroll !important;
+max-height: 100px !important;
+text-overflow: ellipsis !important;
+    ">
+          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+        </p>
         </div>
         <div class="button">
           <a href="#">About me</a>
@@ -77,23 +88,23 @@ margin-top: 0px !important;">
             <form class="form">
               <div class="inputfield">
                 <label>name</label>
-                <input type="text" class="input" id="name-input" name="name-input">
+                <input [(ngModel)]="boxName" name="name-input" type="text" class="input" id="name-input"  >
               </div>
               <div class="inputfield">
                 <label>height</label>
-                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <input [(ngModel)]="boxHeight" name="height-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
               </div>
               <div class="inputfield">
                 <label>width</label>
-                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <input [(ngModel)]="boxWidth" name="width-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
               </div>
               <div class="inputfield">
                 <label>length</label>
-                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <input [(ngModel)]="boxLength" name="length-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
               </div>
               <div class="inputfield">
                 <label>weight</label>
-                <input type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <input [(ngModel)]="boxWeight" name="weight-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
               </div>
               <div class="inputfield">
                 <label>material</label>
@@ -107,7 +118,7 @@ margin-top: 0px !important;">
               </div>
               <div class="inputfield">
                 <label>box description</label>
-                <textarea class="textarea" id="description-input" name="description-input"></textarea>
+                <textarea [(ngModel)]="boxDescription" ame="description-input" class="textarea" id="description-input" n ></textarea>
               </div>
               <div class="inputfield">
                 <label for="img">Select image:</label>
@@ -115,7 +126,7 @@ margin-top: 0px !important;">
               </div>
               <div class="inputfield">
                 <input type="reset" value="Reset" class="btn">
-                <input type="submit" value="Register" class="btn">
+                <button type="submit" value="Register" class="btn" (click)="createBox()">Register</button>
               </div>
             </form>
             </div>
