@@ -2,7 +2,7 @@
 
 <main>
 
-  <div class="text">
+  <div class="text" style="height: 90px">
     <h1>Box factory</h1>
     <p>
       Welcome to your favorite box factory where you can measure and store your boxes
@@ -10,15 +10,34 @@
   </div>
   <header>
     <h1>Top Hottest Products</h1>
+
+
+    <div class="box">
+      <select>
+        <option value="">Material</option>
+        <option value="male">Plastic</option>
+        <option value="female">Metal</option>
+        <option value="female">Weed</option>
+      </select>
+    </div>
+    <div class="box">
+      <select>
+        <option value="">Sort by</option>
+        <option value="male">Date</option>
+        <option value="female">Size</option>
+        <option value="female">Name</option>
+      </select>
+    </div>
     <p>
       <span><</span>
       <span>></span>
     </p>
+    <p>
   </header>
-  <section>
+  <section style="height:530px">
 
     <div *ngFor="let item of [].constructor(12); let i= index ">
-      <div class="product">
+      <div class="product" style="height:530px">
         <picture style="margin-bottom: 0px !important;">
           <img src="images/addBox.png">
         </picture>
@@ -36,11 +55,10 @@ color: red;" [icon]="faTimes"></fa-icon></b>
 max-height: 100px !important;
 text-overflow: ellipsis !important;
     ">
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        </p>
-        </div>
-        <div class="button">
-          <a href="#">About me</a>
+          Box description: <small>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</small>
+          </p>
+          Dimensions: axbxc<br>Size:<br>Material:
+
         </div>
       </div>
     </div>
@@ -91,20 +109,20 @@ margin-top: 0px !important;">
                 <input [(ngModel)]="boxName" name="name-input" type="text" class="input" id="name-input"  >
               </div>
               <div class="inputfield">
-                <label>height</label>
-                <input [(ngModel)]="boxHeight" name="height-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <label>height in cm</label>
+                <input [(ngModel)]="boxHeight" name="height-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" min="0" class="input"/>
               </div>
               <div class="inputfield">
-                <label>width</label>
-                <input [(ngModel)]="boxWidth" name="width-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <label>width in cm</label>
+                <input [(ngModel)]="boxWidth" name="width-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" min="0" class="input"/>
               </div>
               <div class="inputfield">
-                <label>length</label>
-                <input [(ngModel)]="boxLength" name="length-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <label>length in cm</label>
+                <input [(ngModel)]="boxLength" name="length-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" min="0" class="input"/>
               </div>
               <div class="inputfield">
-                <label>weight</label>
-                <input [(ngModel)]="boxWeight" name="weight-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" class="input"/>
+                <label>weight in g</label>
+                <input [(ngModel)]="boxWeight" name="weight-input" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57" min="0" class="input"/>
               </div>
               <div class="inputfield">
                 <label>material</label>
@@ -118,7 +136,7 @@ margin-top: 0px !important;">
               </div>
               <div class="inputfield">
                 <label>box description</label>
-                <textarea [(ngModel)]="boxDescription" ame="description-input" class="textarea" id="description-input" n ></textarea>
+                <textarea [(ngModel)]="boxDescription" name="description-input" class="textarea" id="description-input" n ></textarea>
               </div>
               <div class="inputfield">
                 <label for="img">Select image:</label>

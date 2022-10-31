@@ -54,4 +54,11 @@ public class ProductRepository: IProductRepository
     {
         return _productDbContext.BoxTypeTable.ToList();
     }
+
+    public Boolean IfExists(string name)
+    {
+        var result= _productDbContext.BoxTable.FirstOrDefault(b => b.Name == name);
+
+        return result!=null;
+    }
 }

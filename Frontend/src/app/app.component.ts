@@ -40,7 +40,7 @@ export class AppComponent implements OnInit{
       length: this.boxLength,
       width: this.boxWidth,
       weight: this.boxWeight,
-      boxImage: "",
+      boxImage: "test",
       height: this.boxHeight
     }
     const result = await this.http.createBox(dto);

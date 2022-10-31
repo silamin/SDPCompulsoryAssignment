@@ -11,4 +11,5 @@ public interface IProductRepository
     public void CreateDb();
     BoxType CreateBoxType(BoxType boxType);
     List<BoxType> GetAllBoxTypes();
+    public Boolean IfExists(string name);
 }

@@ -30,6 +30,10 @@ public class ProductService : IProductService
     public Box CreateNewBox(PostBoxDTO dto)
     {
         var validation = _postValidator.Validate(dto);
+        if (_productRepository.IfExists(dto.Name))
+        {
+            throw new ValidationException("Name is already taken");
+        }
         if (!validation.IsValid)
         {
             throw new ValidationException(validation.ToString());
