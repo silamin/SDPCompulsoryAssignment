@@ -1,20 +1,24 @@
 <html style="height: 100%">
 
-<main>
+<main style="margin-top: 0px !important;">
 
-  <div class="text" style="height: 90px">
+  <div class="text" style="height: 90px;padding-top: 0px !important;">
     <h1>Box factory</h1>
     <p>
       Welcome to your favorite box factory where you can measure and store your boxes
     </p>
   </div>
-  <header>
-    <h1>Top Hottest Products</h1>
+  <header style="border-bottom-width: 3px !important;
+padding-bottom: 35px !important;">
+    <script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
 
-
+    <div class="search-box">
+      <input class="search-input" type="text" placeholder="Search something..">
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
     <div class="box">
       <select>
-        <option value="">Material</option>
+        <option value="">Material </option>
         <option value="male">Plastic</option>
         <option value="female">Metal</option>
         <option value="female">Weed</option>
@@ -37,7 +41,7 @@
   <section style="height:530px">
 
     <div *ngFor="let item of [].constructor(12); let i= index ">
-      <div class="product" style="height:530px">
+      <div class="product" style="height:530px;margin-top: 0px !important;">
         <picture style="margin-bottom: 0px !important;">
           <img src="images/addBox.png">
         </picture>

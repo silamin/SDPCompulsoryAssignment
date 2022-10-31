@@ -415,13 +415,12 @@ a{
 }
 
 .box select {
-  background-color: #ddd;
+  background-color: #d5dbd9;
   color: black;
   padding: 8px;
   width: 200px;
   border: none;
   font-size: 20px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   -webkit-appearance: button;
   outline: none;
 }
@@ -437,7 +436,7 @@ a{
   text-align: center;
   font-size: 28px;
   line-height: 45px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #d5dbd9;
   background-color: rgba(255, 255, 255, 0.1);
   pointer-events: none;
 }
@@ -449,4 +448,72 @@ a{
 
 .box select option {
   padding: 30px;
+}
+.search-box {
+  width: 350px;
+
+}
+
+.search-input {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 15px 45px 15px 15px;
+  background-color: #eaeaeb;
+  color: #6c6c6c;
+  border-radius: 6px;
+  border:none;
+  transition: all .4s;
+}
+
+.search-input:focus {
+  border:none;
+  outline:none;
+  box-shadow: 0 1px 12px #b8c6db;
+  -moz-box-shadow: 0 1px 12px #b8c6db;
+  -webkit-box-shadow: 0 1px 12px #b8c6db;
+}
+
+.search-btn {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 6px 9px;
+  margin-left:-45px;
+  border:none;
+  color: #6c6c6c;
+  transition: all .4s;
+  z-index: 10;
+}
+
+.search-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: black;
+}
+
+.search-btn:focus {
+  outline:none;
+  color:black;
+}
+
+/* You just need to get this field - end */
+
+.footer {
+  position:fixed;
+  bottom:5px;
+}
+
+.footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size:12px;
+  color:#000;
+}
+
+.footer a {
+  color: #fff;
+  transition: all .4s;
+}
+
+.footer a:hover {
+  color: #eaeaeb;
 }
