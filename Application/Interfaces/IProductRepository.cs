@@ -5,7 +5,7 @@ namespace Application.Interfaces;
 public interface IProductRepository
 {
     public List<Box> GetAllBoxes();
-    public Box DeleteProduct(Box box);
+    public Box? DeleteProduct(int boxId);
     public Box EditProduct(Box box);
     public Box CreateNewProduct(Box box);
     public void CreateDb();

@@ -40,15 +40,16 @@ padding-bottom: 35px !important;">
   </header>
   <section style="height:530px">
 
-    <div *ngFor="let item of [].constructor(12); let i= index ">
+    <div *ngFor="let box of boxes">
       <div class="product" style="height:530px;margin-top: 0px !important;">
         <picture style="margin-bottom: 0px !important;">
           <img src="images/addBox.png">
         </picture>
         <div class="detail" style="padding-top: 0px !important;">
-            <b>Box number {{i}} <fa-icon style="font-size: 40px;
-margin-left: 130px;
-color: red;" [icon]="faTimes"></fa-icon></b>
+            <b> {{box.name}} <fa-icon (click)="deleteBox(box.id) "  style="font-size: 40px;
+                              margin-left: 200px;
+                              color: red;
+              "[icon]="faTimes"></fa-icon></b>
           <br><br>
             <small>
               </small>
@@ -59,9 +60,9 @@ color: red;" [icon]="faTimes"></fa-icon></b>
 max-height: 100px !important;
 text-overflow: ellipsis !important;
     ">
-          Box description: <small>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</small>
+          Box description: <small>{{box.description}}</small>
           </p>
-          Dimensions: axbxc<br>Size:<br>Material:
+          Dimensions LxWxH in cm: <small>{{box.length}}x{{box.width}}x{{box.height}}</small><br>Size in cm3: <small>{{box.length*box.width*box.height}}</small><br>Weight in g: <small>{{box.weight}}</small><br>Material
 
         </div>
       </div>

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Data;
 using Application.DTOs;
 using Application.Interfaces;
 using AutoMapper;
@@ -32,7 +33,7 @@ public class ProductService : IProductService
         var validation = _postValidator.Validate(dto);
         if (_productRepository.IfExists(dto.Name))
         {
-            throw new ValidationException("Name is already taken");
+            throw new DataException("Name is already taken");
         }
         if (!validation.IsValid)
         {
@@ -58,5 +59,10 @@ public class ProductService : IProductService
     public List<BoxType> GetAllBoxTypes()
     {
         return _productRepository.GetAllBoxTypes();
+    }
+
+    public Box? DeleteBox(int boxId)
+    {
+        return _productRepository.DeleteProduct(boxId);
     }
 }

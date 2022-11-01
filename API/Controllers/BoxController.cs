@@ -1,3 +1,4 @@
+using System.Data;
 using Application.DTOs;
 using Domain;
 using Domain.Interfaces;
@@ -37,10 +38,15 @@ public class BoxController : ControllerBase
         {
             return BadRequest(e.Message);
         }
+        catch (DataException de)
+        {
+            return BadRequest(de.Message);
+        }
         catch (Exception e)
         {
             return StatusCode(500, e.ToString());
         }
+        
     }
     
     [HttpPost]
@@ -50,5 +56,10 @@ public class BoxController : ControllerBase
         _productService.CreateDb();
         return "database created";
     }
-    
+        [HttpDelete]
+        [Route("DeleteBox")]
+        public ActionResult<Box> DeleteBox(int boxId)
+        {
+            return _productService.DeleteBox(boxId)!;
+        }
 }

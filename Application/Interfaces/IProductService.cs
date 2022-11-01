@@ -10,4 +10,5 @@ public interface IProductService
     void CreateDb();
     BoxType CreateNewBoxType(BoxType boxType);
     List<BoxType> GetAllBoxTypes();
+    Box? DeleteBox(int boxId);
 }

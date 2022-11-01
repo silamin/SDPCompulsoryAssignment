@@ -1,6 +1,6 @@
 ﻿namespace Domain;
 
-public class Box
+public class Box : BaseEntity
 {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -18,7 +18,12 @@ public class Box
     }
 
     public string BoxImage { get; set; } = null!;
-    public string CreationDate { get; set; }
+    public string CreationDate { get; set; } = null!;
+}
+
+public class BaseEntity
+{
+    public int Id { get; set; }
 }
 
 public class BoxType

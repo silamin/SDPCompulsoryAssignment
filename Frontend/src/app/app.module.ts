@@ -8,6 +8,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {Overlay} from "@angular/cdk/overlay";
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,7 @@ import {FormsModule} from "@angular/forms";
     MatInputModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MatSnackBar,Overlay],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

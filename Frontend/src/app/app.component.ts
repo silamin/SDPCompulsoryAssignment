@@ -44,8 +44,14 @@ export class AppComponent implements OnInit{
       height: this.boxHeight
     }
     const result = await this.http.createBox(dto);
+    if (result!=null)
     this.boxes.push(result);
-    console.log(result);
+  }
+
+   async deleteBox(id :any){
+    const result= await this.http.deleteBox(id);
+    this.boxes = this.boxes.filter(b=>b.id !=result.id);
+
   }
 
   preFillForm() {
